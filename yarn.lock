@@ -16583,6 +16583,13 @@ express-brute@1.0.1, express-brute@^1.0.1:
     long-timeout "~0.1.1"
     underscore "~1.8.3"
 
+express-end@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/express-end/-/express-end-0.0.8.tgz#0c8fd95428932158f2b4cf91f4045346bf2c5323"
+  integrity sha512-PPntzICAq006LBpXKBVJtmRUiCRqTMZ+OB8L2RFXgx+OmkMWU66IL4DTEPF/DOcxmsuC7Y0NdbT2R71lb+pBpg==
+  dependencies:
+    debug "^2.2.0"
+
 express-hbs@2.5.0, express-hbs@^2.4.2:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/express-hbs/-/express-hbs-2.5.0.tgz#28ed0b8507bb7bcceb102b63fe863585f13a4d89"
@@ -16612,6 +16619,15 @@ express-query-boolean@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/express-query-boolean/-/express-query-boolean-2.0.0.tgz#ea56ac8138e2b95b171b8eee2af88738302941c3"
   integrity sha512-4dU/1HPm8lkTPR12+HFUXqCarcsC19OKOkb4otLOuADfPYrQMaugPJkSmxNsqwmWYjozvT6vdTiqkgeBHkzOow==
+
+express-queue@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/express-queue/-/express-queue-0.0.13.tgz#e9800d67749d4dfab7c34223f00595af933ce5df"
+  integrity sha512-C4OEDasGDqpXLrZICSUxbY47p5c0bKqf/3/3hwauSCmI+jVVxKBWU2w39BuKLP6nF65z87uDFBbJMPAn2ZrG3g==
+  dependencies:
+    debug "^4.3.4"
+    express-end "0.0.8"
+    mini-queue "0.0.14"
 
 express-session@1.18.0:
   version "1.18.0"
@@ -22462,6 +22478,13 @@ mini-css-extract-plugin@^2.5.2:
   integrity sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==
   dependencies:
     schema-utils "^4.0.0"
+
+mini-queue@0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/mini-queue/-/mini-queue-0.0.14.tgz#83d2f3f908e3cac5390bd986d1e6fbbfa0d95b93"
+  integrity sha512-DNh9Wn8U1jrmn1yVfpviwClyER/Y4ltgGbG+LF/KIdKJ8BEo2Q9jDDPG7tEhz6F/DTZ/ohv5D7AAXFVSFyP05Q==
+  dependencies:
+    debug "^3.1.0"
 
 mini-svg-data-uri@^1.2.3:
   version "1.4.4"
