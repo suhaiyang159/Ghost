@@ -26,5 +26,10 @@ module.exports = function renderer(req, res, data) {
     }
 
     // Render Call
-    res.render(res._template, data);
+    res.render(res._template, data, function (err, str) {
+        if (err) {
+            return req.next(err);
+        }
+        res.send(str);
+    });
 };
