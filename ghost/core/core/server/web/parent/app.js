@@ -2,7 +2,7 @@ const debug = require('@tryghost/debug')('web:parent');
 const config = require('../../../shared/config');
 const express = require('../../../shared/express');
 const compress = require('compression');
-const queue = require('express-queue');
+const queue = require('./middleware/request-queue');
 const mw = require('./middleware');
 
 module.exports = function setupParentApp() {
@@ -27,7 +27,7 @@ module.exports = function setupParentApp() {
         queuedLimit: -1 // ensure that requests are queued and not rejected
     }));
     parentApp.use(mw.requestId);
-    parentApp.use(mw.logRequest);
+    // parentApp.use(mw.logRequest); // this is done within the queue mw
 
     // Register event emitter on req/res to trigger cache invalidation webhook event
     parentApp.use(mw.emitEvents);
